@@ -43,8 +43,16 @@ Route::get('/loremipsum', function()
 
 Route::get('/users', function()
 {
+    $users_list = Array();
     $number_of_users = 0;
+    $include_address = false;
+    $include_profile = false;
+    $faker = Faker\Factory::create();
+
      return View::make('users')
+     ->with('include_profile', $include_profile)
+     ->with('include_address', $include_address)
+     ->with('faker', $faker)
         ->with('number_of_users', $number_of_users);
 });
 Route::get('/xkcd', function()
@@ -55,12 +63,39 @@ Route::get('/xkcd', function()
 
 Route::get('/users/list', function() {
 
-$number_of_users   = Input::get('number_of_users'); 
+    $number_of_users   = Input::get('number_of_users'); 
+    $include_address = Input::get('include_address'); 
+     $include_profile = Input::get('include_profile'); 
+    
+
+    // use the factory to create a Faker\Generator instance
+$faker = Faker\Factory::create();
+// generate data by accessing properties
+//$fname =  $faker->name;
+  // 'Lucy Cechtelar';
+//echo $faker->address;
+  // "426 Jordy Lodge
+  // Cartwrightshire, SC 88120-6700"
+//echo $faker->text;
+
+    $users_list = Array();
+
+    for ($i=0; $i < $number_of_users; $i++) {
+
+  array_push($users_list, $faker->name);
+}
+
+
 
 return View::make('users')
+->with('include_profile', $include_profile)
+ ->with('include_address', $include_address)
+->with('faker', $faker)
         ->with('number_of_users', $number_of_users);
 
 });
+
+
 
 
 
