@@ -36,7 +36,7 @@
 
 
 
- <div class="footer navbar-fixed-bottom">
+ <div class="footer  navbar-fixed-bottom">
     <hr/>
             <p>© Nicholas Ogaye 2014</p>
             @yield('footer')

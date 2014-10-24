@@ -22,7 +22,7 @@
                  <form method='GET' action='/users/list/'>
                 <p>
                    
-                     <label for='number_of_users'> How many users do you want to generate (Max 99)? </label>                    
+                     <label for='number_of_users'> Number of users (Max 99)? </label>                    
                       <input type="number" min="1" max="99" required="required" name="number_of_users" value="<?php echo $number_of_users; ?>" />
 <br/>
                        <label for='include_address'> Include Address </label> 

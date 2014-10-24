@@ -38,7 +38,13 @@ Route::get('/', function()
 
 Route::get('/loremipsum', function()
 {
-    return View::make('loremipsum');
+    
+    $number_of_lorem   = Input::get('number_of_lorem'); 
+
+     $generator = new Badcow\LoremIpsum\Generator();
+$paragraphs = $generator->getParagraphs($number_of_lorem);
+
+    return View::make('loremipsum')->with('number_of_lorem', $number_of_lorem)->with('paragraphs', $paragraphs);
 });
 
 Route::get('/users', function()
@@ -54,10 +60,6 @@ Route::get('/users', function()
      ->with('include_address', $include_address)
      ->with('faker', $faker)
         ->with('number_of_users', $number_of_users);
-});
-Route::get('/xkcd', function()
-{
-    return View::make('xkcd');
 });
 
 
