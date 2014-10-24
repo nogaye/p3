@@ -4,7 +4,7 @@
 		body {
 			margin:0;
 			font-family:'Lato', sans-serif;
-			text-align:center;
+			/*text-align:center;*/
 			color: #999;
 		}
 
@@ -28,8 +28,8 @@
 		}
 
 		.t-font {
-    font-family: 'Tangerine', serif;
-    font-size: 68px;
+    /*font-family: 'Tangerine', serif;
+    font-size: 68px;*/
 }
 
 img {
@@ -57,8 +57,13 @@ img {
 }
 
 .t-title {
+	
+
     color: white;
     background-color: #428bca;
+    /*color: #3c763d;
+    background-color: #d9edf7;*/
+    
     text-align: center;
     padding: 20px;
     margin-bottom: 10px;

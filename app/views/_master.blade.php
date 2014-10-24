@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">	
-	 <title>@yield('title', 'Project 3')</title>
+	 <title>@yield('title', "Developer's Best Friend")</title>
 	   <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
     <!-- Optional theme -->
@@ -15,9 +15,13 @@
 </head>
 <body>
 
-	 <nav class="navbar navbar-trader navbar-fixed-top " role="navigation">
-	 	 <div class="t-title t-font">
-            <span style="color: #d9534f" class="glyphicon glyphicon-lock"></span>An xkcd style password generator          
+     <nav class="navbar" role="navigation">
+         <div class="t-title t-font">
+            <h2>
+            <span style="color: white" class="glyphicon glyphicon-thumbs-up"></span>
+            Developer's Best Friend
+            <span style="color: white" class="glyphicon glyphicon-thumbs-up"></span>
+        </h2>
         </div>
    
     </nav>
@@ -29,44 +33,22 @@
     </div>
 
 
-	 
-
- 
-	<div>
-		<h1>You have arrived.</h1>
-	</div>
-	  
 
   <footer>
      
         <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
             <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-
-                </div>
-
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="collapse navbar-collapse" >
                     <ul class="nav navbar-nav">
-
-                        <li><a href="#"> &copy;  Nicholas Ogaye</a></li>
+                        <li><a href="#"> &copy;  2014 Nicholas Ogaye</a></li>
                          <!--Inspired by:   <a href="http://xkcd.com/936/">http://xkcd.com/936/ </a> -->
                     </ul>
-
-
                 </div><!-- /.navbar-collapse -->
-
             </div><!-- /.container-fluid -->
         </nav>
           @yield('footer')
     </footer>
-
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js' type='text/javascript'></script>
 
 </body>

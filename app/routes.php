@@ -13,7 +13,27 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	//return View::make('hello');
+
+    $user = new Item();
+ $user->setName("Nick");
+ //$user->name = 'Nick';
+
+ //$query = $_GET['query'];
+ $query = Input::get('query');
+
+
+   
+    $fruit = Array('Apples', 'Oranges', 'Pears');
+    //echo Pre::render($fruit,'Fruit');
+
+    $name = "Nicholas";
+    return View::make('index')
+        ->with('name', $name)
+        ->with('fruit', $fruit)
+        ->with('user', $user)
+         ->with('query', $query)
+        ;
 });
 
 Route::get('/new', function() {
@@ -64,15 +84,14 @@ Route::get('/list', function() {
 
  $user = new Item();
  $user->setName("Nick");
- $user->name = 'Nick';
-
+ 
  //$query = $_GET['query'];
  $query = Input::get('query');
 
 
    
     $fruit = Array('Apples', 'Oranges', 'Pears');
-    echo Pre::render($fruit,'Fruit');
+   // echo Pre::render($fruit,'Fruit');
 
     $name = "Nicholas";
     return View::make('index')

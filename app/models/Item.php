@@ -9,7 +9,7 @@ class Item  {
     public $logged_in = false;
 
 function __construct() {
-        echo 'You just created a new user!';
+       // echo 'You just created a new user!';
     }
 
     public function __toString()

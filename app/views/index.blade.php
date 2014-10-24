@@ -1,44 +1,39 @@
 @extends('_master')
 
 @section('title')
-    Hello World
+    Developer's Best Friend
 @stop
 
 @section('head')
-    <link rel='stylesheet' href='/css/hello-world.css' type='text/css'>
+   
 @stop
 
 @section('content')
-    <div>
-    <h1>Welcome!</h1>
-    <h1>Hello {{{ $name }}}</h1>
 
-     <h1>Hello {{{ $user }}}</h1>
-
-    @foreach($fruit as $key => $value) 
-    <section> 
-    	<h2>
-    {{ $key }} : {{ $value }}
-    </h2>
-    </section>
-	@endforeach  
-
+<div class="jumbotron">
+  <h1>Hello, world!</h1>
+  <p>...</p>
+  <p><a class="btn btn-primary btn-lg" role="button">Learn more</a></p>
 </div>
 
-<form method='GET' action='/list'>
-    <label for='query'> Search: </label>
-  <input type='text'/>
-   <input type='submit' value='Search'/>
-    </form>
 
-    {{Form::open(array('url' => '/list', 'method' => 'GET'));}}
+    <div>
+   
+ {{Form::open(array('url' => '/list', 'method' => 'GET'));}}
     
     {{Form::label('query','Search');}}
     {{Form::text('query');}}
     {{Form::submit('Search');}}
     {{Form::close()}}
+ <h2>You searched for {{{$query}}}</h2>
 
-    <h2>You searched for {{{$query}}}</h2>
+</div>
+
+
+
+   
+
+   
 @stop
 
 @section('footer')
