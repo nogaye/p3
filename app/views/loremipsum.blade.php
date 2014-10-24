@@ -31,6 +31,10 @@
 
 <hr/>
 
+ @if ($number_of_lorem >0)
+<h4>You have generated {{{ $number_of_lorem }}} paragraphs</h4>
+@endif
+
 {{
  
 implode('<p>', $paragraphs);

@@ -19,7 +19,7 @@
 <hr/>
 
 
-                 <form method='GET' action='/users/list/'>
+                 <form method='GET' action='/users'>
                 <p>
                    
                      <label for='number_of_users'> Number of users (Max 99)? </label>                    
@@ -39,7 +39,9 @@
 
                     <hr/>
   
+   @if ($number_of_users >0)
     <h4>You have generated {{{ $number_of_users }}} users</h4>
+     @endif
 
       @for ($i=0; $i < $number_of_users; $i++) 
 

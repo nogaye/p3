@@ -20,7 +20,7 @@
                 <li class="active"><a href="/">Home</a></li>
                 <li><a href="/users">Generate Random Users</a></li>
                 <li><a href="/loremipsum">Generate Lorem Ipsum</a></li>
-                 <li><a href="/xkcd"> xkcd Generator</a></li>
+                 
                
             </ul>
             <h3 class="text-muted"> <span style="color: #5cb85c" class="glyphicon glyphicon-thumbs-up"></span> Developer's Best Friend</h3>
@@ -36,7 +36,7 @@
 
 
 
- <div class="footer  navbar-fixed-bottom">
+ <div  class="container footer  navbar-fixed-bottom">
     <hr/>
             <p>© Nicholas Ogaye 2014</p>
             @yield('footer')
