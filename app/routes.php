@@ -32,9 +32,38 @@ Route::get('/', function()
         ->with('name', $name)
         ->with('fruit', $fruit)
         ->with('user', $user)
-         ->with('query', $query)
-        ;
+         ->with('query', $query);
 });
+
+
+Route::get('/loremipsum', function()
+{
+    return View::make('loremipsum');
+});
+
+Route::get('/users', function()
+{
+    $number_of_users = 0;
+     return View::make('users')
+        ->with('number_of_users', $number_of_users);
+});
+Route::get('/xkcd', function()
+{
+    return View::make('xkcd');
+});
+
+
+Route::get('/users/list', function() {
+
+$number_of_users   = Input::get('number_of_users'); 
+
+return View::make('users')
+        ->with('number_of_users', $number_of_users);
+
+});
+
+
+
 
 Route::get('/new', function() {
 
