@@ -23,16 +23,16 @@
                 <p>
                    
                      <label for='number_of_users'> Number of users (Max 99)? </label>                    
-                      <input type="number" min="1" max="99" required="required" name="number_of_users" value="<?php echo $number_of_users; ?>" />
+                      <input type="number" min="1" max="99" required="required" name="number_of_users"  id="number_of_users" value="<?php echo $number_of_users; ?>" />
 <br/>
                        <label for='include_address'> Include Address </label> 
-                      <input type="checkbox" name="include_address" <?php if($include_address == true) { echo "checked=\"checked\"";} ?> />
+                      <input type="checkbox" name="include_address" id="include_address" <?php if($include_address == true) { echo "checked=\"checked\"";} ?> />
                       <br/>
                        <label for='include_profile'> Include Profile </label> 
-                      <input type="checkbox" name="include_profile" <?php if($include_profile == true) { echo "checked=\"checked\"";} ?> />
-                  <p/>
+                      <input type="checkbox" name="include_profile" id="include_profile" <?php if($include_profile == true) { echo "checked=\"checked\"";} ?> />
+                  </p>
 
-                 <input type='submit'class="btn btn-lg btn-success" value='Generate Random Users'/>
+                 <input type='submit' class="btn btn-lg btn-success" value='Generate Random Users'/>
                   </form>
 
                   <div>

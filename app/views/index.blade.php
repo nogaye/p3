@@ -31,7 +31,7 @@
                     text.
                 </p>
 
-                  <input type='submit'class="btn btn-lg btn-success" value='Generate Lorem Ipsum'/>
+                  <input type='submit' class="btn btn-lg btn-success" value='Generate Lorem Ipsum'/>
                   </form>
             </div>
 
@@ -43,7 +43,7 @@
                     The random username generator generate a list of random usernames. This is useful as it enables the developer to focus on coding.
                 </p>
 
-                 <input type='submit'class="btn btn-lg btn-success" value='Generate Random Users'/>
+                 <input type='submit' class="btn btn-lg btn-success" value='Generate Random Users'/>
                   </form>
             </div>
         </div>
