@@ -13,18 +13,18 @@
 	 @yield('head')
 
 </head>
-<body>
+<body class="container">
 
-     <nav class="navbar" role="navigation">
-         <div class="t-title t-font">
-            <h2>
-            <span style="color: white" class="glyphicon glyphicon-thumbs-up"></span>
-            Developer's Best Friend
-            <span style="color: white" class="glyphicon glyphicon-thumbs-up"></span>
-        </h2>
+    <div class="header">
+            <ul class="nav nav-pills pull-right">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Generate Random Users</a></li>
+                <li><a href="#">Generate Lorem Ipsum</a></li>
+            </ul>
+            <h3 class="text-muted"> <span style="color: #5cb85c" class="glyphicon glyphicon-thumbs-up"></span> Developer's Best Friend</h3>
+            <hr/>
         </div>
-   
-    </nav>
+
 
  <div class="container body-content">
        
@@ -34,21 +34,13 @@
 
 
 
-  <footer>
-     
-        <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
-            <div class="container-fluid">
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" >
-                    <ul class="nav navbar-nav">
-                        <li><a href="#"> &copy;  2014 Nicholas Ogaye</a></li>
-                         <!--Inspired by:   <a href="http://xkcd.com/936/">http://xkcd.com/936/ </a> -->
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-        </nav>
-          @yield('footer')
-    </footer>
+ <div class="footer navbar-fixed-bottom">
+    <hr/>
+            <p>© Nicholas Ogaye 2014</p>
+            @yield('footer')
+        </div>
+
+
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js' type='text/javascript'></script>
 
 </body>
